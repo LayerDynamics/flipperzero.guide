@@ -1,0 +1,70 @@
+.terminal-container {
+	display: flex;
+	flex-direction: column;
+	height: 600px; /* Set terminal height */
+	width: 500px; /* Set terminal width */
+	background-color: #000; /* Terminal background color */
+	color: #fff; /* Text color */
+	font-family: monospace; /* Font style for terminal feel */
+	border-radius: 5px; /* Optional: adds rounded corners to the terminal */
+	overflow: hidden; /* Ensures nothing spills outside the container */
+  }
+
+  .terminal-header {
+	height: 30px; /* Height of the header */
+	background-color: #222; /* Background color of the header */
+	display: flex;
+	align-items: center;
+	padding: 20px 10px; /* Padding on the sides */
+	border-bottom: 1px solid #333; /* Border to separate from content */
+  }
+
+  .terminal-btn {
+	width: 12px;
+    height: 12px;
+	border-radius: 50%;
+	margin-right: 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+  .close-btn {
+	background-color: #e74c3c; /* Red */
+  }
+
+  .minimize-btn {
+	background-color: #f1c40f; /* Yellow */
+  }
+
+  .maximize-btn {
+	background-color: #2ecc71; /* Green */
+  }
+
+  .terminal-content {
+	flex-grow: 1;
+	overflow-y: auto; /* Makes this part scrollable */
+	padding: 10px; /* Padding inside the content area */
+	background-color: #121212; /* Slightly different background for contrast */
+  }
+
+  .terminal-input-line {
+	display: flex;
+	padding: 10px;
+	background-color: #222; /* Matches the header for a cohesive look */
+  }
+
+  .terminal-input {
+	position: inherit;
+	background-color: #333; /* Makes the input distinct but integrated */
+	color: #fff; /* Ensures text is readable */
+	border: none; /* Removes default input styling */
+	padding: 5px;
+	margin-left: 5px; /* Separates input from prompt symbol */
+	width: 90%;
+  }
+
+  .terminal-prefix {
+	user-select: none; /* Prevents the prompt symbol from being selected */
+  }

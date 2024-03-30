@@ -1,0 +1,41 @@
+/* //GUIDE.CSS */
+.guide-tabs {
+	display: flex;
+	justify-content: center;
+	background-color: #f0f0f0;
+	padding: 10px 0;
+  }
+
+  .guide-tabs a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	border-bottom: none; /* Hide the bottom border for the "folder" look */
+	margin-right: 4px; /* Space between tabs */
+  }
+
+  .guide-tabs a.active-tab {
+	background-color: white;
+	border-color: #ccc;
+	border-bottom-color: white; /* Hide the bottom border on active tab */
+	position: relative; /* Needed for z-index */
+	z-index: 1; /* Make sure the active tab overlaps tabs to its right */
+  }
+
+.guideNav {
+	margin-top: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	display: flex;
+	/* Space between items */
+	color: rgb(255, 130, 0); /* Corrected: removed the stray single quote */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+
+
+#root{
+	margin: 20px;
+}
