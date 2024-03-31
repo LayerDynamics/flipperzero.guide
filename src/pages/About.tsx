@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card } from 'react-bootstrap';
 import { FaInfoCircle } from 'react-icons/fa';
 import '../styles/About.css'; // Assuming this is the correct path

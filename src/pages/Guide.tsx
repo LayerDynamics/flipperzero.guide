@@ -1,6 +1,4 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import '../styles/Guide.css';
 import Firmware from './GuidePages/Firmware';
 import Marauder from './GuidePages/Marauder';
 import Apps from './GuidePages/Apps';
@@ -12,20 +10,18 @@ import RFID from './GuidePages/RFID';
 import SubGhz from './GuidePages/SubGhz';
 import GPIO from './GuidePages/GPIO';
 import U2f from './GuidePages/U2f';
-import Container from 'react-bootstrap/Container';
-
-
 import GuideNavigation from '../components/GuideNavigation';
+import styled from 'styled-components';
+import {Container} from 'react-bootstrap';
 
-console.log('sanityCheck')
-
-// Import other parts as needed
-
+export const StyledContainer = styled(Container)`
+  // Assuming Container is a div at its core, adjust as needed
+  margin-top: 100px; // Directly applying the style mentioned in GuideNavigation
+`;
 function Guide() {
   return (
-    <>
-      <GuideNavigation style={'marginTop: 100px'}/>
-			<script>console.log('guide-nav');</script>
+    <StyledContainer>
+      <GuideNavigation />
       <Routes>
         <Route path="Firmware" element={<Firmware />} />
         <Route path="Marauder" element={<Marauder />} />
@@ -40,8 +36,7 @@ function Guide() {
         <Route path="U2f" element={<U2f />} />
         {/* Define more routes as needed */}
       </Routes>
-</>
-
+    </StyledContainer>
   );
 }
 
