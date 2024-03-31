@@ -205,11 +205,11 @@ Error generating stack: `+l.message+`
 
   a {
     font-weight: 500;
-    color: #ffffff;
+    color: #5c5c5c;
     text-decoration: inherit;
   }
   a:hover {
-    color: #f6ff79;
+    color: #fb810f;
   }
 
 
