@@ -1,6 +1,6 @@
 import { Card } from 'react-bootstrap';
 import { FaReact } from 'react-icons/fa';
-import '../../styles/index.css';
+
 
 function BadUsb() {
 	return(

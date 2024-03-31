@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import logo from '/logos/orange_text_transparent_white_1000px.png';
-import '../styles/index.css';
+
 
 const AppHeader: React.FC = () => {
   const navigate = useNavigate();
