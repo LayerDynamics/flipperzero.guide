@@ -11,9 +11,9 @@ export const Helvb08 = createGlobalStyle`
 `;
 
 
-export const haxrcorp4089 = createGlobalStyle`
+export const Haxrcorp4089 = createGlobalStyle`
   @font-face {
-    font-family: 'haxrcorp-4089';
+    font-family: 'Haxrcorp-4089';
     src: url('/fonts/haxrcorp-4089.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
