@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
+import RepositoryList from './pages/RepositoryList';
 
 
 const AppContainer = styled.div`
@@ -38,6 +39,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/trustedSellers" element={<TrustedSellers />} />
             <Route path="/terminal" element={<TerminalPage />} />
+						<Route path="/repositoryList" element={<RepositoryList />}/>
           </Routes>
         </Container>
         <Footer />

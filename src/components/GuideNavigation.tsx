@@ -1,80 +1,9 @@
-// import { Nav } from 'react-bootstrap';
-// import { Link, NavLink } from 'react-router-dom'; // Import NavLink for its activeClassName prop
-// import styled from 'styled-components';
-
-// const StyledNav = styled(Nav)`
-//   margin: 20px;
-//   display: flex;
-//   color: rgb(255, 130, 0);
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 10px 28px rgba(0, 0, 0, 0.559);
-//   padding: 5px;
-// `;
-
-// const StyledNavLink = styled(NavLink)` // Use NavLink for activeClassName handling
-//   text-decoration: none;
-//   color: black;
-//   padding: 10px 15px;
-//   border: 1px solid #ccc;
-//   border-bottom: none;
-//   margin-right: 4px;
-
-//   &.active {
-//     background-color: white;
-//     border-color: #ccc;
-//     border-bottom-color: white;
-//     position: relative;
-//     z-index: 1;
-//   }
-// `;
-
-// const GuideNavigation = () => {
-//   return (
-//     <StyledNav variant="tabs" defaultActiveKey="/guide/firmware">
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/Firmware" activeClassName='active'>Firmware</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/BadUsb" activeClassName='active'>BadUsb</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/Marauder" activeClassName='active'>Marauder</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/Apps" activeClassName='active'>Apps</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/Infrared" activeClassName='active'>Infrared</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/IButton" activeClassName='active'>IButton</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/NFC" activeClassName='active'>NFC</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/RFID" activeClassName='active'>RFID</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/SubGhz" activeClassName='active'>SubGhz</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/GPIO" activeClassName='active'>GPIO</StyledNavLink>
-//       </Nav.Item>
-//       <Nav.Item>
-//         <StyledNavLink to="/guide/U2f" activeClassName='active'>U2f</StyledNavLink>
-//       </Nav.Item>
-//       {/* Add more Nav.Link components for additional guide parts as needed */}
-//     </StyledNav>
-//   );
-// };
-
-// export default GuideNavigation;
 import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'; // Removed unused Link import
 import styled from 'styled-components';
 
 const StyledNav = styled(Nav)`
-  margin: 20px;
+  padding: 70px;
   display: flex;
   color: rgb(255, 130, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 10px 28px rgba(0, 0, 0, 0.559);
@@ -91,8 +20,8 @@ const StyledNavLink = styled(NavLink)`
 
   &.active {
     background-color: white;
-    border-color: #ccc;
-    border-bottom-color: white;
+    border-color: #000000;
+    border-bottom-color: #000000;
     position: relative;
     z-index: 1;
   }

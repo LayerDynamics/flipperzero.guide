@@ -13,14 +13,16 @@ import U2f from './GuidePages/U2f';
 import GuideNavigation from '../components/GuideNavigation';
 import styled from 'styled-components';
 import {Container} from 'react-bootstrap';
+import SearchComponent from '../components/SearchComponent';
 
 export const StyledContainer = styled(Container)`
   // Assuming Container is a div at its core, adjust as needed
-  margin-top: 100px; // Directly applying the style mentioned in GuideNavigation
+  margin-top: 0px; // Directly applying the style mentioned in GuideNavigation
 `;
 function Guide() {
   return (
     <StyledContainer>
+			<SearchComponent />
       <GuideNavigation />
       <Routes>
         <Route path="Firmware" element={<Firmware />} />

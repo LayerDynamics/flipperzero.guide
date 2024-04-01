@@ -2,7 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
-
+	@font-face {
+		font-family: 'Born2bSportyV2';
+    src: url('/fonts/Born2bSportyV2.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+	}
 
 
   :root, html, body {

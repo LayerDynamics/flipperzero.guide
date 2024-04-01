@@ -8,26 +8,38 @@ const AboutContainer = styled(Card)`
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: start; /* Align items to start from the top */
-  gap: 20px; /* Space between items */
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
   color: rgb(255, 130, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 20px; /* Note: This will override the margin-top property above */
+  margin: 20px;
+`;
+
+const Title = styled.h2`
+  font-family: 'GravityBold8', sans-serif;
+	margin: 30px;
+`;
+
+const Text = styled.div` // Changed from styled.p to styled.div
+  font-family: 'Born2bSportyV2', monospace;
+	font-size: 18pt;
 `;
 
 function About() {
   return (
     <AboutContainer className="text-center">
       <Card.Body>
-        <Card.Title>About This Project <FaInfoCircle /></Card.Title>
-        <Card.Text>
-          This site hopes to serve as a more comprehensive guide on how to actually use the flipper zero.
-        </Card.Text>
-        <Card.Text>
-          It showcases the power of modern web development tools and libraries, aiming to provide a clear path for building scalable and maintainable web applications.
-        </Card.Text>
+        <Card.Title>
+          <Title>About This Project <FaInfoCircle /></Title>
+        </Card.Title>
+        <>
+          <Text>This site hopes to serve as a more comprehensive guide on how to actually use the flipper zero.</Text>
+        </>
+        <>
+          <Text>For relevant information that explains how to utilize the various tools the flipper supplies in a real-world way, head over to the <b>Newbie Guide</b>.</Text>
+        </>
       </Card.Body>
     </AboutContainer>
   );
