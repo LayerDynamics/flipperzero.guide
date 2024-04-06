@@ -202,7 +202,7 @@ const DropdownContent = styled.div`
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: 0;
@@ -215,7 +215,7 @@ const DropdownContent = styled.div`
 
 const DropdownLink = styled(NavLink)`
   color: black;
-  padding: 12px 16px;
+  padding: 17px 16px;
   display: block;
 
   &:hover {
@@ -251,6 +251,7 @@ const AppHeader: React.FC = () => {
           <DropdownContent className={dropdownVisible ? 'show' : ''}>
             <DropdownLink onClick={() => handleNavigate('/')}>Home</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/guide/firmware')}>Newbie Guide</DropdownLink>
+						<DropdownLink onClick={() => handleNavigate('/advanced/page1')}>Advanced Guide</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/about')}>About</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/trustedSellers')}>Trusted Sellers</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/repositoryList')}>Useful Repositories</DropdownLink>

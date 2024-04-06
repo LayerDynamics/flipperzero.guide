@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Guide from './pages/Guide';
+import Advanced from './pages/Advanced';
 import AppHeader from './components/AppHeader';
 import TrustedSellers from './pages/TrustedSellers';
 import TerminalPage from './pages/TerminalPage';
@@ -36,6 +37,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/guide/*" element={<Guide />} />
+						<Route path="/advanced/*" element={<Advanced />} />
             <Route path="/about" element={<About />} />
             <Route path="/trustedSellers" element={<TrustedSellers />} />
             <Route path="/terminal" element={<TerminalPage />} />
