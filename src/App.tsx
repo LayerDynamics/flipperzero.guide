@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
 import Guide from './pages/Guide';
 import Advanced from './pages/Advanced';
 import AppHeader from './components/AppHeader';
@@ -38,7 +37,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/guide/*" element={<Guide />} />
 						<Route path="/advanced/*" element={<Advanced />} />
-            <Route path="/about" element={<About />} />
             <Route path="/trustedSellers" element={<TrustedSellers />} />
             <Route path="/terminal" element={<TerminalPage />} />
 						<Route path="/repositoryList" element={<RepositoryList />}/>

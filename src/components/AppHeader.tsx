@@ -252,7 +252,6 @@ const AppHeader: React.FC = () => {
             <DropdownLink onClick={() => handleNavigate('/')}>Home</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/guide/firmware')}>Newbie Guide</DropdownLink>
 						<DropdownLink onClick={() => handleNavigate('/advanced/page1')}>Advanced Guide</DropdownLink>
-            <DropdownLink onClick={() => handleNavigate('/about')}>About</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/trustedSellers')}>Trusted Sellers</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/repositoryList')}>Useful Repositories</DropdownLink>
             <DropdownLink onClick={() => handleNavigate('/terminalPage')} style={{ display: 'none' }}>Terminal</DropdownLink>
